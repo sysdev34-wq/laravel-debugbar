@@ -13,12 +13,16 @@ use Fruitcake\LaravelDebugbar\Console\GetCommand;
 use Fruitcake\LaravelDebugbar\Console\QueriesCommand;
 use Fruitcake\LaravelDebugbar\Support\Octane\ResetDebugbar;
 use Illuminate\Cookie\Middleware\EncryptCookies;
+use Illuminate\Container\Container;
 use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Contracts\View\Engine;
+use Illuminate\Contracts\View\Factory
 use Illuminate\Foundation\Events\Terminating;
 use Illuminate\Foundation\Http\Events\RequestHandled;
 use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\Events\JobProcessing;
 use Illuminate\Support\Collection;
+use Illuminate\View\Factory as ViewFactory;
 use Laravel\Octane\Events\RequestReceived;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
